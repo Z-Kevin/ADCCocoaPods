@@ -14,6 +14,8 @@
 		9BA70C24209FEDB500F2CDC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA70C22209FEDB500F2CDC9 /* LaunchScreen.storyboard */; };
 		9BA70C27209FEDB500F2CDC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA70C26209FEDB500F2CDC9 /* main.m */; };
 		9BA70C3D20A04D0F00F2CDC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA70C3C20A04D0F00F2CDC9 /* UIKit.framework */; };
+		9BD7C89020C9063D00E60574 /* ZXLNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C88F20C9063D00E60574 /* ZXLNetWorking.m */; };
+		BE627C4DA3C80D968EDF4E91 /* libPods-ADCCocoaPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA79F55B6C98305CB921A51 /* libPods-ADCCocoaPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AC7DAC8D1349C4527EAF85A /* Pods-ADCCocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADCCocoaPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADCCocoaPods/Pods-ADCCocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
 		9BA70C14209FEDB300F2CDC9 /* ADCCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADCCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA70C17209FEDB300F2CDC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BA70C18209FEDB300F2CDC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +43,10 @@
 		9BA70C2C209FEDB500F2CDC9 /* ADCCocoaPodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADCCocoaPodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA70C3C20A04D0F00F2CDC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9BA70C3E20A0584400F2CDC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9BD7C88E20C9063D00E60574 /* ZXLNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXLNetWorking.h; sourceTree = "<group>"; };
+		9BD7C88F20C9063D00E60574 /* ZXLNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXLNetWorking.m; sourceTree = "<group>"; };
+		C6F368B064A98B65F4EF263A /* Pods-ADCCocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADCCocoaPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADCCocoaPods/Pods-ADCCocoaPods.release.xcconfig"; sourceTree = "<group>"; };
+		FAA79F55B6C98305CB921A51 /* libPods-ADCCocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ADCCocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA70C3D20A04D0F00F2CDC9 /* UIKit.framework in Frameworks */,
+				BE627C4DA3C80D968EDF4E91 /* libPods-ADCCocoaPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,12 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13379819A612505273AEC44E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AC7DAC8D1349C4527EAF85A /* Pods-ADCCocoaPods.debug.xcconfig */,
+				C6F368B064A98B65F4EF263A /* Pods-ADCCocoaPods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9BA70C0B209FEDB300F2CDC9 = {
 			isa = PBXGroup;
 			children = (
 				9BA70C16209FEDB300F2CDC9 /* ADCCocoaPods */,
 				9BA70C15209FEDB300F2CDC9 /* Products */,
 				9BA70C3B20A04D0E00F2CDC9 /* Frameworks */,
+				13379819A612505273AEC44E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +104,8 @@
 				9BA70C18209FEDB300F2CDC9 /* AppDelegate.m */,
 				9BA70C1A209FEDB300F2CDC9 /* ViewController.h */,
 				9BA70C1B209FEDB300F2CDC9 /* ViewController.m */,
+				9BD7C88E20C9063D00E60574 /* ZXLNetWorking.h */,
+				9BD7C88F20C9063D00E60574 /* ZXLNetWorking.m */,
 				9BA70C1D209FEDB300F2CDC9 /* Main.storyboard */,
 				9BA70C20209FEDB500F2CDC9 /* Assets.xcassets */,
 				9BA70C22209FEDB500F2CDC9 /* LaunchScreen.storyboard */,
@@ -100,6 +120,7 @@
 			children = (
 				9BA70C3E20A0584400F2CDC9 /* XCTest.framework */,
 				9BA70C3C20A04D0F00F2CDC9 /* UIKit.framework */,
+				FAA79F55B6C98305CB921A51 /* libPods-ADCCocoaPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BA70C35209FEDB500F2CDC9 /* Build configuration list for PBXNativeTarget "ADCCocoaPods" */;
 			buildPhases = (
+				896903B7D08732AF1BE612E0 /* [CP] Check Pods Manifest.lock */,
 				9BA70C10209FEDB300F2CDC9 /* Sources */,
 				9BA70C11209FEDB300F2CDC9 /* Frameworks */,
 				9BA70C12209FEDB300F2CDC9 /* Resources */,
@@ -199,11 +221,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		896903B7D08732AF1BE612E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ADCCocoaPods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BA70C10209FEDB300F2CDC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD7C89020C9063D00E60574 /* ZXLNetWorking.m in Sources */,
 				9BA70C1C209FEDB300F2CDC9 /* ViewController.m in Sources */,
 				9BA70C27209FEDB500F2CDC9 /* main.m in Sources */,
 				9BA70C19209FEDB300F2CDC9 /* AppDelegate.m in Sources */,
@@ -359,6 +403,7 @@
 		};
 		9BA70C36209FEDB500F2CDC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC7DAC8D1349C4527EAF85A /* Pods-ADCCocoaPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +421,7 @@
 		};
 		9BA70C37209FEDB500F2CDC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F368B064A98B65F4EF263A /* Pods-ADCCocoaPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

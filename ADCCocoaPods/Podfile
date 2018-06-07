@@ -1,0 +1,4 @@
+target 'ADCCocoaPods' do
+platform :ios,'8.0'
+pod 'AFNetworking', '~> 3.2.1'
+end
